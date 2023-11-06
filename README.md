@@ -21,13 +21,13 @@ Primero debes clonar el reto en tu maquina para que puedas acceder a la informac
 **Si tienes configurada una llave SSH**
 
 ```bash
-git clone **PONER URL**
+git clone git@github.com:Ubits-Desarrollo-Web/Reto_React_TS.git
 ```
 
 **para clonarlo por HTTPS**
 
 ```bash
-git clone **PONER URL**
+git clone https://github.com/Ubits-Desarrollo-Web/Reto_React_TS.git
 ```
 
 ### 2. Instalar dependencias

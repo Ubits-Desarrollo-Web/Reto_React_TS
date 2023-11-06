@@ -4,7 +4,7 @@
 
 ## Backend Parte 1
 
-recuerda que este reto requiere que completes el reto de backend dado que este servirá como la API de nuestro e-commerce para esto primero crea una lista de al menos 5 productos los cuales tengan las siguientes propiedades:
+recuerda que este reto requiere que completes el reto de backend dado que este servirá como la API de nuestro e-commerce, para utilizar la API creada agrega una lista de al menos 5 productos los cuales tengan las siguientes propiedades:
 
 ```js
 {
@@ -64,7 +64,7 @@ Para realizar el reto y consumir información de la API que creaste recuerda ten
 
 ## Backend Parte 2
 
-Ademas de esto es necesario que nuestro backend permita recibir peticiones a servidores fuera de nuestro dominio a esto se le conoce como la política CORS de datos e información, esta acción no esta permitida por defecto en express de tal manera que debemos habilitar dicha opción para esto debemos ir a nuestra carpeta del reto backend correr el siguiente comando:
+Ademas de esto es necesario que nuestro backend permita recibir peticiones a servidores fuera de nuestro dominio a esto se le conoce como la política **CORS** de datos e información, esta acción no esta permitida por defecto en express de tal manera que debemos habilitar dicha opción, para esto debemos ir a nuestra carpeta del reto backend correr el siguiente comando:
 
 ```bash
 npm install cors
@@ -80,13 +80,13 @@ var app = express();
 app.use(cors());
 ```
 
-puedes encontrar mas información sobre las políticas CORS y como permitir peticiones para servidores externos en el siguiente [link](https:expressjs.com/en/resources/middleware/cors.html).
+puedes encontrar mas información sobre las políticas CORS y como permitir peticiones para servidores externos en el siguiente **[link](https:expressjs.com/en/resources/middleware/cors.html)**.
 
 ## Reto React - Frontend
 
 ## Parte 1.
 
-en el componente (pagina) `Home` usa el hook useEfFect para hacer el llamado de la data, esto unicamente en el montado del componente que se utilizara en la sección de sellers, recuerda llamar de tu API, en la url **http:127.0.0.1:8080/product** tu API debe estar encendida y corriendo localmente ademas de tener algunos productos iniciales para renderizar para almacenar la información llamada en nuestra API usa el hook useState para almacenar en un estado los productos obtenidos y pasarlos al componente `Sellers`
+en el componente (pagina) `Home` usa el hook useEffect para hacer el llamado de la data, esto unicamente en el montado del componente, esta data se utilizara en la sección de sellers, recuerda que para llamar tu API, en la url **http:127.0.0.1:8080/product** debe estar encendida y corriendo localmente ademas de tener algunos productos iniciales para renderizar, luego de llamada la información del backend almacena la información obtenida en nuestra API usando el hook `useState` y pasarla al componente `Sellers`
 
 ```js
 GET 127.0.0.1:8080/products;
@@ -94,7 +94,7 @@ GET 127.0.0.1:8080/products;
 
 ## Parte 2.
 
-en el componente `Sellers` crear el typo en typescript con la información que se recibirá y renderizara en este componente recuerda que este sera un arreglo de productos donde los productos tienen la estructura que se presento anteriormente, este typo utilízalo para definir el type de los parámetros de entrada de este componente, ten en cuenta que este sera un arreglo de objetos.
+en el componente `Sellers` crear el typo en typescript con la información que se recibirá y renderizara en este componente, recuerda que este sera un arreglo de productos donde los productos tienen la estructura que se presento anteriormente, este typo define los parámetros de entrada del componente `Sellers`.
 
 ```js
 [
@@ -111,7 +111,7 @@ en el componente `Sellers` crear el typo en typescript con la información que s
 
 ## Parte 3.
 
-luego de obtener los productos de nuestro backend y pasarlos al componente `Sellers`, utiliza el método **map** para iterar sobre cada producto y mostrar una tarjeta por cada uno de los productos para esto utiliza el componente `Card` que encuentras en la carpeta de `components`.
+luego de obtener los productos de nuestro backend y pasarlos al componente `Sellers`, utiliza el método **map** para iterar sobre cada producto y mostrar una tarjeta por cada uno de los productos, para esto utiliza el componente `Card` que encuentras en la carpeta de `components`.
 
 ## Parte 4.
 
@@ -127,13 +127,13 @@ dado el css en `Card.css` deduce la estructura del `TSX` de este componente para
 
 ## Parte 6.
 
-Ahora en el archivo **App.tsx** utiliza el método `createBrowserRouter`, para crear la ruta de `Home` el cual sera el componente `Home.tsx` que encuentras en la carpeta **pages**, ademas de esto agrega una ruta dinámica `productDetail/:id` la cual mostrara los detalles del producto seleccionado utilizando el componente `ProductDetails`.
+Ahora en el archivo **App.tsx** utiliza el método `createBrowserRouter`, para crear la ruta raíz `/` el cual sera el componente `Home.tsx` que encuentras en la carpeta **pages**, ademas de esto agrega una ruta dinámica `productDetail/:id` la cual mostrara los detalles del producto seleccionado utilizando el componente `ProductDetails` en la carpeta **pages**.
 
 luego en el componente App retorna el `RouterProvider` que contendrá el router creado con `createBrowserRouter`
 
 ## Parte 7.
 
-Luego en el componente **Card** utiliza el componente `Link` expuesto por **react-router-dom** para dirigir al usuario a la ruta `/productDetails/:id` cuando el usuario de click en el botón de `Buy Now`
+Luego en el componente **Card** utiliza el componente `Link` expuesto por **react-router-dom** para dirigir al usuario a la ruta `/productDetails/:id` cuando el usuario de click en el botón de **`Buy Now`**
 
 ## Parte 8.
 
@@ -143,13 +143,13 @@ en el componente (pagina) `ProductDetails` usa el hook useEfFect para hacer el l
  GET 127.0.0.1:8080/product/:id;
 ```
 
-luego utiliza el hook useState para guardar la información obtenida del producto y pásala como props al componente **Details**.
+luego utiliza el hook `useState` para guardar la información obtenida del producto y pásala como props al componente **Details**.
 
 NOTA: debes crear un type para definir los parámetros que vas a recibir del hook `useParams`.
 
 ## Parte 9.
 
-dada la siguiente estructura de JSX en el componente `Details` agrega los estilos css necesarios para ver los detalles del producto, donde se vea como se presenta en la siguiente imagen
+En el componente `Details` dada su estructura de JSX agrega los estilos css necesarios para ver los detalles del producto, donde se vea como se presenta en la siguiente imagen:
 
 <p align="center">
   <img src="./public/details.png"/>
@@ -157,7 +157,7 @@ dada la siguiente estructura de JSX en el componente `Details` agrega los estilo
 
 ## Parte 10.
 
-crear el typo en typescript con la información que se recibirá y renderizara en este componente recuerda que este serán los parámetros de un producto que tiene la estructura que se presento anteriormente, este typo creado utilízalo para definir el type de los parámetros de entrada de este componente.
+Crear el typo en typescript con la información que se recibirá y renderizara en este componente `Details` recuerda que este serán los parámetros de un producto que tiene la estructura que se presento anteriormente, este typo creado utilízalo para definir el type de los parámetros de entrada de este componente.
 
 ## Parte 11.
 
