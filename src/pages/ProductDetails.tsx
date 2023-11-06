@@ -25,8 +25,6 @@ const ProductDetails = () => {
   // **Details**
   // NOTA: debes crear un type para definir los parámetros que vas a recibir del hook useParams
 
-  const { id } = useParams();
-
   const [product, setProduct] = useState<Product>({});
 
   return (
