@@ -17,17 +17,6 @@ const Home = () => {
   // para almacenar la información llamada en nuestra API usa el hook useState para almacenar en un estado
   // los productos obtenidos y pasarlos al componente `Sellers`
 
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const result = await fetch(URL);
-      const data = await result.json();
-      setProducts(data);
-    };
-    fetchProducts();
-  }, []);
-
   return (
     <>
       <PromoBar />

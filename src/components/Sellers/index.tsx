@@ -6,20 +6,7 @@ import "./Sellers.css";
 // presento anteriormente, este typo creado utilízalo para definir el type de los parámetros de entrada
 // de este componente.
 
-type Product = {
-  title: string;
-  price: number;
-  category: string;
-  description: number;
-  image: string;
-  stock: number;
-};
-
-type SellerProps = {
-  products: Product[];
-};
-
-const Sellers = ({ products }: SellerProps) => {
+const Sellers = ({ products }) => {
   return (
     <section id="sellers">
       <div className="seller container">
@@ -30,11 +17,8 @@ const Sellers = ({ products }: SellerProps) => {
           producto y mostrar una tarjeta por cada uno de los productos
           para esto utiliza el componente `Card` que encuentras en la carpeta de 
           components */}
-          {/* acá se debe inyectar las tarjetas llamas desde la api
-          <b>https://127.0.0.1:8080/products</b> */}
-          {products.map((product) => (
-            <Card {...product} />
-          ))}
+          acá se debe inyectar las tarjetas llamas desde la api
+          <b>https://127.0.0.1:8080/products</b>
         </div>
       </div>
     </section>

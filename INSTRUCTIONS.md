@@ -86,11 +86,7 @@ puedes encontrar mas información sobre las políticas CORS y como permitir peti
 
 ## Parte 1.
 
-en el componente (pagina) Home usa el hook useEfFect para hacer el llamado de la data, esto unicamente en el montado del componente
-que se utilizara en la sección de sellers, recuerda llamar de tu API, en la url **http:127.0.0.1:8080/product**
-tu API debe estar encendida y corriendo localmente ademas de tener algunos productos iniciales para renderizar
-para almacenar la información llamada en nuestra API usa el hook useState para almacenar en un estado
-los productos obtenidos y pasarlos al componente `Sellers`
+en el componente (pagina) `Home` usa el hook useEfFect para hacer el llamado de la data, esto unicamente en el montado del componente que se utilizara en la sección de sellers, recuerda llamar de tu API, en la url **http:127.0.0.1:8080/product** tu API debe estar encendida y corriendo localmente ademas de tener algunos productos iniciales para renderizar para almacenar la información llamada en nuestra API usa el hook useState para almacenar en un estado los productos obtenidos y pasarlos al componente `Sellers`
 
 ```js
 GET 127.0.0.1:8080/products;
@@ -98,17 +94,19 @@ GET 127.0.0.1:8080/products;
 
 ## Parte 2.
 
-crear el typo en typescript con la información que se recibirá y renderizara en este componente recuerda que este sera un arreglo de productos donde los productos tienen la estructura que se presento anteriormente, este typo creado utilízalo para definir el type de los parámetros de entrada de este componente.
+en el componente `Sellers` crear el typo en typescript con la información que se recibirá y renderizara en este componente recuerda que este sera un arreglo de productos donde los productos tienen la estructura que se presento anteriormente, este typo utilízalo para definir el type de los parámetros de entrada de este componente, ten en cuenta que este sera un arreglo de objetos.
 
 ```js
-{
-   title: TEXT,
-   price: INT,
-   category: TEXT,
-   description: TEXT,
-   image: TEXT,
-   stock: INT
-}
+[
+  {
+    title: TEXT,
+    price: INT,
+    category: TEXT,
+    description: TEXT,
+    image: TEXT,
+    stock: INT,
+  },
+];
 ```
 
 ## Parte 3.
@@ -151,7 +149,7 @@ NOTA: debes crear un type para definir los parámetros que vas a recibir del hoo
 
 ## Parte 9.
 
-dada la siguiente estructura de JSX agrega los estilos css necesarios para ver los detalles del producto, para que se vea como se presenta en la siguiente imagen
+dada la siguiente estructura de JSX en el componente `Details` agrega los estilos css necesarios para ver los detalles del producto, donde se vea como se presenta en la siguiente imagen
 
 <p align="center">
   <img src="./public/details.png"/>
