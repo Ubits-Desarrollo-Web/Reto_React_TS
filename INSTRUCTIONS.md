@@ -2,7 +2,7 @@
 
 ## Setup Backend: configuración del servidor
 
-## Backend Parte 1;
+## Backend Parte 1
 
 recuerda que este reto requiere que completes el reto de backend dado que este servirá como la API de nuestro e-commerce para esto primero crea una lista de al menos 5 productos los cuales tengan las siguientes propiedades:
 
@@ -62,7 +62,7 @@ estas son algunas url que te podrán servir para el setting de las imágenes de 
 
 Para realizar el reto y consumir información de la API que creaste recuerda tener prendido el servidor backend y asegurarte con postman que se esta ejecutando correctamente las peticiones en nuestra API.
 
-## Backend Parte 2;
+## Backend Parte 2
 
 Ademas de esto es necesario que nuestro backend permita recibir peticiones a servidores fuera de nuestro dominio a esto se le conoce como la política CORS de datos e información, esta acción no esta permitida por defecto en express de tal manera que debemos habilitar dicha opción para esto debemos ir a nuestra carpeta del reto backend correr el siguiente comando:
 
@@ -147,7 +147,7 @@ en el componente (pagina) `ProductDetails` usa el hook useEfFect para hacer el l
 
 luego utiliza el hook useState para guardar la información obtenida del producto y pásala como props al componente **Details**.
 
-NOTA: debes crear un type para definir los parámetros que vas a recibir del hook useParams.
+NOTA: debes crear un type para definir los parámetros que vas a recibir del hook `useParams`.
 
 ## Parte 9.
 
