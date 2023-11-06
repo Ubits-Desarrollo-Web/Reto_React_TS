@@ -1,0 +1,19 @@
+/* //........top text ........// */
+
+.top-txt {
+  background-color: var(--black);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.945);
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.head a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.945);
+  margin: 0 10px;
+}

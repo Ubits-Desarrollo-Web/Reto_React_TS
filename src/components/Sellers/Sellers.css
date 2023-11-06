@@ -1,0 +1,109 @@
+/* //........ seller  ........// */
+
+.best-seller {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.best-seller .red {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.best-seller .blue {
+  color: #8989ce;
+  cursor: pointer;
+}
+
+.best-seller .white {
+  color: var(--light-black);
+  cursor: pointer;
+}
+
+.best-seller .grey {
+  color: grey;
+  cursor: pointer;
+}
+
+.best-seller .brown {
+  color: rgb(175, 53, 53);
+  cursor: pointer;
+}
+
+.best-seller .yellow {
+  color: #ffff00;
+  cursor: pointer;
+}
+
+.best-seller .orange {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+.best-seller .green {
+  color: #008000;
+  cursor: pointer;
+}
+
+.seller h2 {
+  margin-top: 65px;
+  margin-bottom: 20px;
+}
+
+.seller .best-p1 {
+  width: 250px;
+  height: 370px;
+  /* border: 2px solid black; */
+}
+
+.seller .best-p1 img {
+  height: 250px;
+  width: 250px;
+}
+
+.seller .best-p1 .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seller .best-p1 .price .colors input[type="radio"] {
+  color: #000;
+  background-color: #000;
+}
+
+.best-seller .buy-now a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.seller a:hover {
+  color: var(--primary-color);
+}
+
+.best-seller .buy-now button,
+.best-seller .add-cart button {
+  padding: 10px 15px;
+  margin-top: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+  transition: 0.5s;
+}
+
+.best-seller .buy-now button:hover,
+.best-seller .add-cart button:hover {
+  background-color: var(--white);
+  font-weight: 600;
+}
+
+.best-seller .buy-now button:hover a,
+.best-seller .add-cart button:hover a {
+  color: var(--primary-color);
+}
